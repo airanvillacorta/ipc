@@ -1,0 +1,168 @@
+body{
+	color: black;
+	background: #f6f6f6;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+p{
+	text-align: justify;
+}
+#contenedor{
+	position: relative;
+	width: 900px;
+	margin: 0px auto;
+	background: #fff;
+}
+#contenido{
+	position: relative;
+	padding: 0px 20px 0px 20px;
+	margin-bottom: 90px;
+}
+/* INICIO MENÚ */
+nav{
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #FBE080;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    float: left;
+    position: relative; 
+    left: 50%;
+    background-color: #FBE080;
+}
+nav li{
+	float: left;
+	position: relative;
+    right: 50%;
+    background-color: #FBE080;
+}
+nav li a{
+    display: block;
+    padding: 10px 20px;
+}
+nav ul li:hover{
+    display: block;
+	background-color: #818749;
+	border-radius: 5px;
+}
+.elemento-activo{
+	display: block;
+	background-color: orange;
+	border-radius: 5px;
+}
+.destacado{
+    display: block;
+	background-color: #B55336;
+	border-radius: 5px;
+}
+/* FIN MENÚ */
+/* INICIO FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    border-top: 1px solid #979797;
+    margin-top: 30px;
+    background: #f6f6f6;
+
+}
+#texto-footer{
+    text-align: center;
+    font-size: 13px;
+}
+/* FIN FOOTER */
+.imagenes{
+	padding: 2px;
+	border: 1px solid grey;
+	width: 250px;
+	margin: 10px;
+}
+#div-img-restaurante{
+	position: relative;
+    width: 100%;
+    text-align: center;
+}
+#carta table{
+	position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+#carta table a{
+	color: #B55336;
+}
+#info-alimentacion{
+	font-size: 13px;
+}
+#img-alergenos{
+	padding: 2px;
+	width: 500px;
+	margin: 10px;
+}
+#img-ubicacion{
+	border: 1px solid grey;
+	padding: 2px;
+	width: 400px;
+	margin: 10px;
+	float: right;
+}
+.alinear-texto-tabla{
+	text-align: left;
+}
+form{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+#img-plato{
+	padding: 2px;
+	border: 1px solid grey;
+	margin: 10px;
+	width: 350px;
+	margin: 10px;
+}
+#volver{
+	float: right;
+	padding: 3px;
+	background-color: orange;
+}
+#volver a:hover{
+	background-color: #B55336;
+}
+.boton{
+    font-weight: bold;
+    color: #ffffff;
+    background: #B55336;
+    border: 1px;
+    height: 21px;
+}
+.acceso{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	background: #f6f6f6;
+}
+.busqueda{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 65px; 
+}
+.foracc{
+	float: right;
+	width: 30%;
+}
+.forbusq{
+	float: right;
+	width: 30%;
+}

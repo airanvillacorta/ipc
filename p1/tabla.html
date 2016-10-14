@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Airán Villacorta Betancor"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/javascript" src="js.js"></script>
+		<title>Restaurante: El Guachinche Canario</title>
+	</head>
+	<body>
+		<div id="contenedor"><!-- Inicio contenedor -->
+			<!-- Inicio Acceso -->
+			<div class="acceso">
+				<form action="#" method="POST" class="foracc" name="formularioAcceso" onsubmit="return verificaFormularioAcceso();">
+					Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Contraseña:<br>
+					<input type="text" id="usuario" name="usuario" size="8"/>&nbsp;&nbsp;
+					<input type="password" id="pass" name="pass" maxlength="8" size="8"/>
+					<input type="submit" value="Entrar" class="boton"/>
+				</form>
+			</div><!-- Fin Acceso -->
+
+			<img src="img/cabecera.jpg" alt="Cabecera de la web"/> <br><br>
+			<nav><!-- Inicio Menú -->
+				<ul>
+					<li><a href="index.html">Restaurante</a></li>
+					<li class="elemento-activo"><a href="tabla.html">Carta</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="reserva.html" class="destacado">Reservas</a></li>
+				</ul>
+			</nav><!-- Fin Menú -->
+
+			<!-- Inicio Búsqueda -->
+			<div class="busqueda">
+				<form action="#" method="POST" class="forbusq" name="FormularioPedido" onsubmit="return verificaFormularioPedido();">
+					<input type="search" name="busqueda" size="12" placeholder="Número pedido...">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" value="Buscar Pedido" class="boton">
+				</form>
+			</div>
+			<!-- Fin Búsqueda -->
+			
+			<div id="contenido"><!-- Inicio Contenido -->
+				<h2>La Carta</h2>
+				<hr/><br>
+
+				<center><h2>¿Qué Ofrecemos?</h2></center><br>
+
+				<p>Cuando nos visites, no puedes perderte nuestra amplia variedad de platos y postres de la <b>cocina típica canaria</b>, elaborados todos ellos al momento.</p>
+
+				<div id="carta">
+					<table>
+						<tr>
+							<th colspan="2"></th>			    
+						    <th class="alinear-texto-tabla"><h3>Época del año recomendada</h3></th>
+						    <th class="alinear-texto-tabla"><h3>Media</h3></th>
+						    <th class="alinear-texto-tabla"><h3>Entera</h3></th>
+						</tr>
+						<tr> <!-- ENTRANTES -->
+						    <td rowspan="5"><h3>Entrantes</h3></td>
+						    <td><a href="plato1.html">Papas arrugadas con mojo</a></td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>5,50€</td>
+						</tr>
+						<tr>
+						    <td><a href="plato2.html">Ropa vieja</a></td>
+						    <td>Invierno</td>
+						    <td>-€</td>
+						    <td>5,00€</td>
+						</tr>
+						<tr>
+						    <td>Queso tierno</td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>5,00€</td>
+						</tr>
+						<tr>
+						    <td>Pimientos de padrón</td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>3,00€</td>
+						</tr>
+						<tr>
+						    <td>---------</td>
+						    <td>---------</td>
+						    <td>------</td>
+						    <td>------</td>
+						</tr>
+						<tr> <!-- SOPAS -->
+						    <td rowspan="3"><h3>Sopas</h3></td>
+						    <td><a href="plato3.html">Escaldón de gofio</a></td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>3,50€</td>
+						</tr>
+						<tr>
+						    <td>Sopa de marisco</td>
+						    <td>Invierno</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>---------</td>
+						    <td>---------</td>
+						    <td>------</td>
+						    <td>------</td>
+						</tr>
+						<tr> <!-- PESCADOS -->
+						    <td rowspan="5"><h3>Pescados</h3></td>
+						    <td><a href="plato4.html">Cherne frito con papas arrugadas</a></td>
+						    <td>Verano</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td><a href="plato5.html">Lapas con mojo verde</a></td>
+						    <td>Verano</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>Sancocho</td>
+						    <td>Invierno, Primavera</td>
+						    <td>8,50€</td>
+						    <td>12,00€</td>
+						</tr>
+						<tr>
+						    <td>Gambas al ajillo</td>
+						    <td>Verano</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>---------</td>
+						    <td>---------</td>
+						    <td>------</td>
+						    <td>------</td>
+						</tr>
+						<tr> <!-- CARNES -->
+						    <td rowspan="5"><h3>Carnes</h3></td>
+						    <td><a href="plato6.html">Pata asada</a></td>
+						    <td>Todos</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>Chuleta de cerdo</td>
+						    <td>Todos</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>Chorizos parrilleros</td>
+						    <td>Todos</td>
+						    <td>5,50€</td>
+						    <td>8,00€</td>
+						</tr>
+						<tr>
+						    <td>Parrillada de carne (2 personas)</td>
+						    <td>Invierno</td>
+						    <td>15,00€</td>
+						    <td>28,00€</td>
+						</tr>
+						<tr>
+						    <td>---------</td>
+						    <td>---------</td>
+						    <td>------</td>
+						    <td>------</td>
+						</tr>
+						<tr> <!-- POSTRES -->
+						    <td rowspan="5"><h3>Postres</h3></td>
+						    <td>Helados variados</td>
+						    <td>Verano</td>
+						    <td>-€</td>
+						    <td>1,50€</td>
+						</tr>
+						<tr>
+						    <td>Frangollo</td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>3,50€</td>
+						</tr>
+						<tr>
+						    <td>Mousse de gofio</td>
+						    <td>Todos</td>
+						    <td>-€</td>
+						    <td>3,50€</td>
+						</tr>
+						<tr>
+						    <td>Helado con bienmesabe</td>
+						    <td>Verano</td>
+						    <td>-€</td>
+						    <td>4,50€</td>
+						</tr>
+						<tr>
+						    <td>---------</td>
+						    <td>---------</td>
+						    <td>------</td>
+						    <td>------</td>
+						</tr>
+					</table>
+				</div>
+				<!-- Información Varia -->
+				<p id="info-alimentacion">** Pinche sobre cada uno de nuestros platos para obtener una descripción más amplia. En ella, podrá encontrar información a cerca de los alérgenos, ingredientes y calorias.</p>
+
+				<br>
+
+				<center>
+					<h2>¿Te gustaría disfrutar de nuestra comida en tu domicilio?<br>Pregunta por nuestros platos para llevar.</h2>
+				</center>
+
+				<br><br>
+				
+				<!-- Información Alérgenos -->
+				<h4><ins>Información Alérgenos:</ins></h4>
+				<div id="div-img-restaurante">
+					<img src="img/alergenos.jpg" alt="Alérgenos" id="img-alergenos">
+				</div>
+				<h5>
+					<ul>
+						<li>Cereales que contengan gluten, a saber: trigo, centeno, cebada, avena, espelta, kamut o sus variedades híbridas y productos derivados.</li>
+						<li>Crustáceos y productos a base de crustáceos.</li>
+						<li>Huevos y productos a base de huevo.</li>
+						<li>Pescado y productos a base de pescado.</li>
+						<li>Cacahuetes y productos a base de cacahuetes.</li>
+						<li>Soja y productos a base de soja.</li>
+						<li>Leche y sus derivados (incluida la lactosa).</li>
+						<li>Frutos de cáscara, es decir: almendras, avellanas, nueces, anacardos, pacanas, nueces de Brasil, alfóncigos, nueces macadamia o nueces de Australia y productos derivados.</li>
+						<li>Apio y productos derivados.</li>
+						<li>Mostaza y productos derivados.</li>
+						<li>Granos de sésamo y productos a base de granos de sésamo.</li>
+						<li>Dióxido de azufre y sulfitos  cuando se encuentre en concentraciones superiores a los 10mg/kg o 10mg/litro (los sulfitos son derivados del azufre que se utilizan como aditivos conservantes algunos alimentos como zumos de uva, mostos y vinos, sidra, vinagre, también en algunas salsas y en conservas de vegetales y crustaceos).</li>
+						<li>Altramuces y productos a base de altramuces.</li>
+						<li>Moluscos y productos a base de moluscos.</li>
+					</ul>
+				</h5>
+			</div>
+			<!-- Fin Contenido -->
+			<footer><!-- Pie de página. -->
+				<p id="texto-footer"><b>&copy; 2016 - Diseñado por: Airán Villacorta Betancor.</b></p>
+			</footer>
+		</div><!-- Fin contenedor -->
+	</body>
+</html>

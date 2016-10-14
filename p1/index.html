@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Airán Villacorta Betancor"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<script type="text/javascript" src="js.js"></script>
+		<title>Restaurante: El Guachinche Canario</title>
+
+	</head>
+	<body>
+		<div id="contenedor"><!-- Inicio contenedor -->
+			<!-- Inicio Acceso -->
+			<div class="acceso">
+				<form action="#" method="POST" class="foracc" name="formularioAcceso" onsubmit="return verificaFormularioAcceso();">
+					Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Contraseña:<br>
+					<input type="text" id="usuario" name="usuario" size="8"/>&nbsp;&nbsp;
+					<input type="password" id="pass" name="pass" maxlength="8" size="8"/>
+					<input type="submit" value="Entrar" class="boton"/>
+				</form>
+			</div><!-- Fin Acceso -->
+
+			<img src="img/cabecera.jpg" alt="Cabecera de la web"/> <br><br>
+			<nav><!-- Inicio Menú -->
+				<ul>
+					<li class="elemento-activo"><a href="index.html">Restaurante</a></li>
+					<li><a href="tabla.html">Carta</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="reserva.html" class="destacado">Reservas</a></li>
+				</ul>
+			</nav><!-- Fin Menú -->
+
+			<!-- Inicio Búsqueda -->
+			<div class="busqueda">
+				<form action="#" method="POST" class="forbusq" name="FormularioPedido" onsubmit="return verificaFormularioPedido();">
+					<input type="search" name="busqueda" size="12" placeholder="Número pedido...">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" value="Buscar Pedido" class="boton">
+				</form>
+			</div>
+			<!-- Fin Búsqueda -->
+			
+			<div id="contenido"><!-- Inicio Contenido -->
+				<h2>El Restaurante</h2>
+				<hr/><br>
+				<p><b>El Guachinche Canario</b>, es un restaurante de comida típica canaria con diversidad de platos y tapas para toda la familia. Disponemos de una carta con alergenos para que puedas disfrutar de nuestros productos sin preocupaciones.</p>
+				<p>En nuestro restaurante te sentiras como en casa, ya que disponemos de zonas acogedoras, que invitan a pasar un rato agradable y que te transportarán por diferentes momentos de la historia de nuestra isla, a través de objetos autóctonos y fotografias en las que mostramos vivencias de nuestros antepasados.</p>
+				<div id="div-img-restaurante">
+					<img src="img/local/1.jpg" alt="Foto: Salon 1" class="imagenes"/>
+					<img src="img/local/2.jpg" alt="Foto: Salon 2" class="imagenes"/>
+					<img src="img/local/3.jpg" alt="Foto: Salon 3" class="imagenes"/>
+				</div>
+				<p>En nuestro restaurante, disponemos de varias zonas en las que disfrutar de una buena comida familiar, una cena romántica u ocasiones especiales, tales como celebraciones, reuniones, entre otros.</p>
+				<div id="div-img-restaurante">
+					<img src="img/local/4.jpg" alt="Foto: Restaurante 1" class="imagenes"/>
+				</div>
+				<p>El restaurante posee una oferta gastronómica de más de 30 platos con un denominador común, la calidad de nuestras materias primas. Todos nuestros productos son elaborados artesanalmente y siguiendo las recetas de nuestros predecesores para hacer partícipe a nuestros comensales de la historia gastronómica de nuestra isla a través de su paladar.</p>
+				<p>También disponemos de una selecta carta de vinos de nuestra tierra, dónde podrá disfrutar de sabores, olores y matices únicos catalogados a nivel mundial.</p>
+			</div>
+			<!-- Fin Contenido -->
+			<footer><!-- Pie de página. -->
+				<p id="texto-footer"><b>&copy; 2016 - Diseñado por: Airán Villacorta Betancor.</b></p>
+			</footer>
+		</div><!-- Fin contenedor -->
+	</body>
+</html>
