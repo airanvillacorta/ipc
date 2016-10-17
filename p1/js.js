@@ -31,9 +31,10 @@ function verificaFormularioAcceso(){
 
 function verificaFormularioReserva(){
 	var error = [];
+	var expresionRegular3 = /^[\w.-]*[a-z][a-z][a-z]$/i;
 
-	if (document.getElementById('nombre').value.length < 3){ // nombre.
-		error[0] = 'El Nombre ha de ser al menos de 3 letras.';
+	if (!expresionRegular3.test(document.getElementById('nombre').value)){ // nombre.
+		error[0] = 'El Nombre ha de ser al menos de 3 letras y no contener numeros';
 		todoCorrecto = false;
    	}
 
@@ -46,11 +47,11 @@ function verificaFormularioReserva(){
    		todoCorrecto = false;
 	}
 	  
-   	var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+   	var expresion = /^[a-z]+[a-z]+[a-z]+@[a-z]+[a-z]+[a-z]+\.[\w.-]*[a-z][a-z]$/i;
    	//alert(document.getElementById('direccion').value);
 
    	if (!expresion.test(document.getElementById('direccion').value)){ // email.
-		error[2] = 'El E-mail ha de seguir la siguiente estructura: (ejemplo@ejemplo.com).';
+		error[2] = 'El E-mail ha de seguir la siguiente estructura: (xyz@xyz.co).';
 		todoCorrecto = false;
    	}
 
